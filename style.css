@@ -65,7 +65,7 @@ main{
     color: #414649;
 }
 
-main .container {
+.container {
     margin: 0 auto;
     padding-top: 40px;
     width: 1000px;
@@ -114,4 +114,36 @@ main ol > ol {
 main ol > li {
     padding-left: 15px;
     margin-bottom: 12px;
+}
+
+/*****************
+    FOOTER
+ ******************/
+
+footer{
+    background-color: #F5F5F5;
+ 
+}
+.footer-container{
+    height: 50px;
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-nav ul{
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    font-size: 0.7em;
+    font-weight: 300;
+}
+
+.footer-nav a{
+    color: grey;
+}
+
+.footer-container select{
+    width: 180px;
 }

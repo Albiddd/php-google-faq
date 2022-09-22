@@ -99,13 +99,42 @@
             ?>
                 <h3 class="title"><?= $faqEl['question'] ?></h3>
                 <div><?= $faqEl['answer'] ?></div>
-            <?php 
-            } 
+            <?php
+            }
             ?>
 
         </div>
     </main>
-    
+    <footer>
+        <div class="footer-container">   
+            <?php
+            $footerNav = [
+                'Google',
+                'Tutto su Google',
+                'Privacy',
+                'Termini',
+            ];
+            ?>
+            <div class="footer-nav">
+                <ul>
+                    <?php 
+                    foreach($footerNav as $footerValue) { 
+                    ?>
+                        <li class="footer-item"><a href=""><?= $footerValue; ?></a></li>
+                    <?php 
+                    } 
+                    ?>
+                </ul>     
+            </div>
+            <div>
+            <select name="language" id="langauge">
+                    <option value="italian">Italiano</option>
+                    <option value="english">English</option>
+                    <option value="espanol">Español</option>
+            </select>
+            </div>
+        </div> 
+    </footer>
 
 
 </body>
